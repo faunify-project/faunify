@@ -1,7 +1,11 @@
 import "./globals.css";
 import type { ReactNode } from "react";
 import { dir } from "i18next";
+
 import nextI18NextConfig from "../../next-i18next.config.js";
+
+import nextI18NextConfig from "../next-i18next.config.js";
+
 
 export function generateStaticParams() {
   return nextI18NextConfig.i18n.locales.map((lng: string) => ({ locale: lng }));
